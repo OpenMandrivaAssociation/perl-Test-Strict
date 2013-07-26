@@ -1,2 +1,4 @@
+removed_sources:
+  Test-Strict-0.14.tar.gz: 4d14d4b2aabddec1536f5a30f5f513f311783bd5
 sources:
-  "Test-Strict-0.14.tar.gz": 4d14d4b2aabddec1536f5a30f5f513f311783bd5
+  Test-Strict-0.22.tar.gz: 361d10119a577940d5d0c43bee6346009db95d72
