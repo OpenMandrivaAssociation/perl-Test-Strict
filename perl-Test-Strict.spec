@@ -1,15 +1,15 @@
 %define upstream_name    Test-Strict
-%define upstream_version 0.22
+%define upstream_version 0.23
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.22
+Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	Check syntax, presence of use strict; and test coverage
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Test/Test-Strict-0.22.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Devel::Cover)
@@ -86,4 +86,5 @@ make test
 
 * Sat May 31 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.09-1mdv2009.0
 - first mdv release
+
 
