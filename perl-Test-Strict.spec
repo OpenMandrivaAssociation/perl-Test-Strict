@@ -1,15 +1,15 @@
 %define upstream_name    Test-Strict
-%define upstream_version 0.23
+%define upstream_version 0.54
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Check syntax, presence of use strict; and test coverage
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/manwar/Test-Strict
+Source0:	https://cpan.metacpan.org/authors/id/M/MA/MANWAR/Test-Strict-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
