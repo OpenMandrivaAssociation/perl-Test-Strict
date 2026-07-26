@@ -1,15 +1,13 @@
 %define upstream_name    Test-Strict
-%define upstream_version 0.54
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.54
+Release:	2
 
 Summary:	Check syntax, presence of use strict; and test coverage
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/manwar/Test-Strict
-Source0:	https://cpan.metacpan.org/authors/id/M/MA/MANWAR/Test-Strict-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/M/MA/MANWAR/Test-Strict-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -37,7 +35,7 @@ Along with Test::Pod, this module can provide the first tests to setup for a
 module author.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -62,9 +60,7 @@ make test
 
 * Sat Aug 01 2009 Jérôme Quelin <jquelin@mandriva.org> 0.130.0-1mdv2010.0
 + Revision: 405596
-- rebuild using %%perl_convert_version
-
-* Sun Feb 01 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.13-1mdv2009.1
+- rebuild using %0.54 Sun Feb 01 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.13-1mdv2009.1
 + Revision: 336238
 - update to new version 0.13
 
